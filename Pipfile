@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+invoke = "*"
+sphinx-autodoc-typehints = "*"
+sphinx-sitemap = "*"
+
+[packages]
+
+[scripts]
+build_docs = "sphinx-build -E -b html docs docs/_build"
+serve_docs = "python -m http.server --directory docs/_build"
+
+[requires]
+python_version = "3.7"
