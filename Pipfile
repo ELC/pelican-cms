@@ -10,6 +10,7 @@ sphinx-rtd-theme = "*"
 invoke = "*"
 sphinx-autodoc-typehints = "*"
 sphinx-sitemap = "*"
+pipenv = "*"
 
 [packages]
 
