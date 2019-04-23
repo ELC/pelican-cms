@@ -1,12 +1,13 @@
-import argparse
 import threading, webbrowser
+import argparse
 
 try:
     from cheroot.wsgi import Server as WSGIServer, PathInfoDispatcher
 except ImportError:
     from cherrypy.wsgiserver import CherryPyWSGIServer as WSGIServer, WSGIPathInfoDispatcher as PathInfoDispatcher
 
-from pelican_cms import app
+from pelican_cms import create_app
+app = create_app()
 
 def run_debug_server() -> None:
     try:

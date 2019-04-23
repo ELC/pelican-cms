@@ -10,6 +10,7 @@ sphinx-rtd-theme = "*"
 invoke = "*"
 sphinx-autodoc-typehints = "*"
 sphinx-sitemap = "*"
+pylint = "*"
 
 [packages]
 flask = "*"
@@ -17,6 +18,9 @@ pyinstaller = "*"
 pyfladesk = "==1.1"
 cherrypy = "*"
 argparse = "*"
+flask-sqlalchemy = "*"
+flask-marshmallow = "*"
+marshmallow-sqlalchemy = "*"
 
 [scripts]
 build_docs = "sphinx-build -E -b html docs docs/_build"
